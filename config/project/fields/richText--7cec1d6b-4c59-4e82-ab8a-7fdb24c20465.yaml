@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: richText
+instructions: null
+name: 'rich text'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: ''
+  purifierConfig: Default.json
+  purifyHtml: true
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  tinymceConfig: Default.json
+translationKeyFormat: null
+translationMethod: none
+type: abmat\tinymce\Field

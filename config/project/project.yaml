@@ -1,0 +1,48 @@
+dateModified: 1720556286
+email:
+  fromEmail: sedaezzat@icloud.com
+  fromName: Sport
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  assets:
+    hasUrls: true
+    name: assets
+    settings:
+      path: '@webroot/images'
+    type: craft\fs\Local
+    url: '@web/images'
+meta:
+  __names__:
+    7cec1d6b-4c59-4e82-ab8a-7fdb24c20465: 'rich text' # rich text
+    24b335d5-9e12-4faf-a1de-02925c8d7606: 'homepage asssets' # homepage asssets
+    45fffe05-b731-48ec-9532-e07d8d939850: homepage # homepage
+    49d23e08-aa8f-459b-af22-ff6498494a3d: Sport # Sport
+    671adc41-c795-47a7-a032-75cc596ca3c0: Sport # Sport
+    1417cccc-ab33-480d-b15d-401ab55c9029: 'intro text' # intro text
+    8198bac8-efc9-4a7c-87c2-8cff3f53d6d0: banner # banner
+    86017f27-1e19-42a4-8dfe-6a74d3065132: 'Public Schema' # Public Schema
+    a3eb63ed-c51d-4923-974c-6a330cc82d64: thumbnail # thumbnail
+    b3c4ea91-8c24-4e93-9fab-c86e31f31d96: header # header
+    c4277b1f-b97c-4110-8714-81968a65d02d: homepage # homepage
+    c491729c-afce-4e5c-9296-85d7fbe40364: 'header title' # header title
+    cd06fc77-8527-46df-b19d-47534adb8b27: 'full text' # full text
+    d78a8aeb-4963-46e8-86e7-2cf811ffd6a4: 'header title' # header title
+    f46a6409-633b-47fd-9eb5-c694e0d4c140: 'banner image' # banner image
+plugins:
+  abm-tinymce:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: Sport
+  schemaVersion: 5.0.0.21
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

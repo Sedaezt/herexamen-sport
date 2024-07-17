@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 45fffe05-b731-48ec-9532-e07d8d939850 # homepage
+handle: homepage
+maxAuthors: 1
+name: homepage
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  49d23e08-aa8f-459b-af22-ff6498494a3d: # Sport
+    enabledByDefault: true
+    hasUrls: true
+    template: homepage/_entry
+    uriFormat: 'homepage/{slug}'
+type: channel
