@@ -3,6 +3,7 @@
     --main-color-hover: #051e46;
     --background-color: #fdfdfd;
     --color-black: #121010;
+    --color-white: #fff
 
     --font-size-h1: 2rem;
     --font-size-h2: 1.6rem;
@@ -65,7 +66,7 @@ a:hover {
     padding: 0.5em 1em;
     border-radius: 5px;
     border: 1px solid var(--color-black);
-    
+
 }
 
 /* .button:hover {

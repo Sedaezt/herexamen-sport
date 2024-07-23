@@ -93,25 +93,49 @@ nav a:hover {
   border: 1px solid var(--background-color);
 }
 
+
 .article-details {
-  max-width: 800px;
-  background-color: var(--background-color);
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 1em;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  min-height: 100vh; 
+  padding: 20px; 
+  box-sizing: border-box; 
+}
+
+.article-details article {
+  display: flex;
+  flex-direction: row; 
+  align-items: flex-start; 
+  width: 100%;
+  max-width: 1200px; 
+}
+
+.article-details picture {
+  flex: 1; 
+  padding-right: 20px; 
+  max-width: 300px; 
 }
 
 .article-details img {
-  width: 100%;
+  width: 100%; 
+  height: auto; 
 }
 
-.article-details p {
-  margin: 2rem;
+.article-details .text-content {
+  flex: 2;
 }
 
-.article-details h2 {
-  margin-left: 2rem;
+.article-details h1, .article-details p {
+  margin: 0 0 10px 0; 
 }
+
+.button.btn-back {
+  display: block; 
+  margin: 20px auto 0; 
+}
+
+
 
 .plugin-categories {
   padding: 1rem 0 0 0;

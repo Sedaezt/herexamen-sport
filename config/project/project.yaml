@@ -1,4 +1,4 @@
-dateModified: 1720556286
+dateModified: 1721738983
 email:
   fromEmail: sedaezzat@icloud.com
   fromName: Sport
@@ -14,6 +14,7 @@ fs:
 meta:
   __names__:
     7cec1d6b-4c59-4e82-ab8a-7fdb24c20465: 'rich text' # rich text
+    7e9bf105-b884-4c5d-9218-047703c51ec6: 'home detail' # home detail
     24b335d5-9e12-4faf-a1de-02925c8d7606: 'homepage asssets' # homepage asssets
     45fffe05-b731-48ec-9532-e07d8d939850: homepage # homepage
     49d23e08-aa8f-459b-af22-ff6498494a3d: Sport # Sport

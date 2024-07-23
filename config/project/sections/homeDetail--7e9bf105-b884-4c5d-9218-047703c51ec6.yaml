@@ -2,9 +2,9 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   - 45fffe05-b731-48ec-9532-e07d8d939850 # homepage
-handle: homepage
+handle: homeDetail
 maxAuthors: 1
-name: homepage
+name: 'home detail'
 previewTargets:
   -
     __assoc__:
@@ -22,6 +22,6 @@ siteSettings:
   49d23e08-aa8f-459b-af22-ff6498494a3d: # Sport
     enabledByDefault: true
     hasUrls: true
-    template: categories/entry.twig
-    uriFormat: '_homedetail.twig/{slug}'
+    template: home-detail/_entry
+    uriFormat: 'home-detail/{slug}'
 type: channel
