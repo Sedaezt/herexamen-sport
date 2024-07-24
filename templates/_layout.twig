@@ -5,31 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{siteName}}</title>
     {% do craft.app.view.registerCssFile('@web/styles/normalize.css') %}
-    {% do craft.app.view.registerCssFile('@web/styles/shared.css?148358') %}    
-    {% do craft.app.view.registerCssFile('@web/styles/style.css?12359') %}
-
+    {% do craft.app.view.registerCssFile('@web/styles/shared.css?148358') %}
+    {% do craft.app.view.registerCssFile('@web/styles/style.css?12365') %}
 </head>
 <body>
     <header>
-      {% set headerTitle = craft.entries().section('headerTitle').one() %}
-      {{headerTitle.richText}}
-      <nav>
-        <input type="checkbox" name="menu-toggle" id="menu-toggle"/>
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul id="nav-menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="/producten">Producten</a></li>
-          <li><a href="/sporten">Sporten</a></li>
-          <li><a href="/accessoires">Accessoires</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
+        <div class="header-container">
+            {% set headerTitle = craft.entries().section('headerTitle').one() %}
+            <div class="header-title">
+                {{ headerTitle.richText }}
+            </div>
+            <nav class="nav-menu">
+                <input type="checkbox" name="menu-toggle" id="menu-toggle"/>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="nav-menu">
+                    <li><a href="{{siteUrl}}">Home</a></li>
+                    <li><a href="{{siteUrl}}producten">Producten</a></li>
+                    <li><a href="{{siteUrl}}sporten">Sporten</a></li>
+                    <li><a href="{{siteUrl}}accessoires">Accessoires</a></li>
+                    <li><a href="{{siteUrl}}contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     {% block content %}
     {# hier komt de content #}
     {% endblock %}
+
+    {% include 'categories/footer.twig' %}
+
 </body>
 </html>

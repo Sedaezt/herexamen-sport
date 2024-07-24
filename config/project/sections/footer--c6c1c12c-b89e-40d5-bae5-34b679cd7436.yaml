@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 44cd1cbe-d5ab-4cd5-92c2-da3c31250bf9 # footer
+handle: footer
+maxAuthors: 1
+name: footer
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  49d23e08-aa8f-459b-af22-ff6498494a3d: # Sport
+    enabledByDefault: true
+    hasUrls: true
+    template: categories/footer.twig
+    uriFormat: 'footer.twig{slug}'
+type: single

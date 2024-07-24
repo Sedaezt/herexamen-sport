@@ -1,19 +1,10 @@
 {% extends "_layout.twig" %}
 
 {% block content %}
-  <section class="article-details">
-    <article>
-      <picture>
-        <source media="(max-width:959px)" srcset="{{ entry.bannerImage.one().url('banner') }}">
-        <source media="(min-width:960px)" srcset="{{ entry.bannerImage.one().url('thumbnail') }}">
-        <img src="{{ entry.bannerImage.one().url('banner') }}" alt="">
-      </picture>
-      <div class="text-content">
+    <section class="article-details">
+        <img src="{{entry.bannerImage.one().url('header')}}" alt="">
         <h1>{{ entry.title }}</h1>
         <p>{{ entry.introText }}</p>
         <p>{{ entry.fullText }}</p>
-      </div>
-    </article>
-    <a class="button btn-back" href="/homepage">Terug naar de homepage</a>
-  </section>
+    </section>
 {% endblock %}

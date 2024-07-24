@@ -1,0 +1,27 @@
+{% set footer = craft.entries.section('footer').one() %}
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>About Us</h2>
+            <p>{{ footer.aboutUs }}</p>
+        </div>
+    
+        <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <p>Email: {{ footer.email }}</p>
+            <p>Phone: {{ footer.phoneNumber }}</p>
+        </div>
+        <div class="footer-section social">
+            <h2>Follow Us</h2>
+            <ul>
+                {% for social in footer.links.all() %}
+                    <li><a href="{{ social.url }}">{{ social.platform }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; {{ "now"|date("Y") }} Fit&Active</p>
+    </div>
+</footer>
