@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  e27b7e8d-8b29-4978-9429-942ee429e12e:
+  21cfe2bb-0851-4536-aef9-2dcc11a65935:
     tabs:
       -
         elementCondition: null
@@ -30,13 +30,13 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 8cc394f9-213a-47c3-8e28-6d44beea0932
+            uid: 12357744-bb4e-4b4e-aa76-b6a24ce9a6ec
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 5bd4c651-f112-4f11-8851-732d9c6c7b58 # banner image
+            fieldUid: 31dfce39-3d42-40a1-85e2-3230c8259b72 # main image
             handle: null
             includeInCards: false
             instructions: null
@@ -45,47 +45,17 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 01190c9c-7218-4c33-b008-d65211da96ac
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 1417cccc-ab33-480d-b15d-401ab55c9029 # intro text
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: fcfda9da-9d9d-4deb-8072-88f8d963fd71
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: cd06fc77-8527-46df-b19d-47534adb8b27 # full text
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: c19915dd-1983-4b0c-b20a-73de1512b877
+            uid: 855861b2-7086-4650-8411-a4be0f0c1cd6
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 4d265f2c-1932-4d4b-9d0e-f29acf60d6d9
+        uid: 5fca1b34-afc2-4607-8a41-fcb3ce11547b
         userCondition: null
-handle: homepage
+handle: mainImage
 hasTitleField: true
-icon: house
-name: homepage
+icon: image
+name: 'main image'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

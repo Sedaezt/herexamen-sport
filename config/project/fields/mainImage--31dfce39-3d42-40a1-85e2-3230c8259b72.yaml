@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: bannerImage
+handle: mainImage
 instructions: null
-name: 'banner image'
+name: 'main image'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -13,8 +13,8 @@ settings:
   defaultUploadLocationSubpath: null
   localizeRelations: false
   maintainHierarchy: false
-  maxRelations: null
-  minRelations: null
+  maxRelations: 1
+  minRelations: 1
   previewMode: full
   restrictFiles: false
   restrictLocation: false
@@ -23,7 +23,7 @@ settings:
   restrictedLocationSubpath: null
   selectionLabel: null
   showCardsInGrid: false
-  showSiteMenu: true
+  showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources: '*'

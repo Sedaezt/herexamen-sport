@@ -22,6 +22,6 @@ siteSettings:
   49d23e08-aa8f-459b-af22-ff6498494a3d: # Sport
     enabledByDefault: true
     hasUrls: true
-    template: categories/entry.twig
-    uriFormat: '_homedetail.twig/{slug}'
+    template: categories/_allhomepage.twig
+    uriFormat: 'homepage/{slug}'
 type: channel
