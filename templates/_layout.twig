@@ -6,7 +6,7 @@
     <title>{{siteName}}</title>
     {% do craft.app.view.registerCssFile('@web/styles/normalize.css') %}
     {% do craft.app.view.registerCssFile('@web/styles/shared.css?148358') %}
-    {% do craft.app.view.registerCssFile('@web/styles/style.css?123598') %}
+    {% do craft.app.view.registerCssFile('@web/styles/style.css?123590') %}
 </head>
 <body>
     <header>
@@ -21,11 +21,11 @@
                 <span></span>
                 <span></span>
                 <ul id="nav-menu">
-                    <li><a href="{{siteUrl}}">Home</a></li>
-                    <li><a href="{{siteUrl}}producten">Producten</a></li>
-                    <li><a href="{{siteUrl}}sporten">Sporten</a></li>
-                    <li><a href="{{siteUrl}}accessoires">Accessoires</a></li>
-                    <li><a href="{{siteUrl}}contact">Contact</a></li>
+                    <li><a href="{{ siteUrl }}">Home</a></li>
+                    <li><a href="{{ siteUrl }}producten">Producten</a></li>
+                    <li><a href="{{ siteUrl }}sport">Sporten</a></li>
+                    <li><a href="{{ siteUrl }}accessoires">Accessoires</a></li>
+                    <li><a href="{{ siteUrl }}contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,6 +34,8 @@
     {% block content %}
     {# hier komt de content #}
     {% endblock %}
+
+    
 
     {% include 'categories/footer.twig' %}
 

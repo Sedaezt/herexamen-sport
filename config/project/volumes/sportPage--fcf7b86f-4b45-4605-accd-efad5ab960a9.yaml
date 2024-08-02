@@ -1,6 +1,7 @@
-color: null
+altTranslationKeyFormat: null
+altTranslationMethod: none
 fieldLayouts:
-  e27b7e8d-8b29-4978-9429-942ee429e12e:
+  7bcdb318-0415-449f-8894-b7b6b813e30c:
     tabs:
       -
         elementCondition: null
@@ -29,52 +30,45 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 8cc394f9-213a-47c3-8e28-6d44beea0932
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: ea2ca0ec-1337-4a6f-b466-0c6b641419a2
             userCondition: null
             warning: null
             width: 100
           -
+            attribute: alt
+            class: null
+            cols: null
+            disabled: false
             elementCondition: null
-            fieldUid: 5bd4c651-f112-4f11-8851-732d9c6c7b58 # banner image
-            handle: null
+            id: null
             includeInCards: false
             instructions: null
             label: null
+            name: null
+            orientation: null
+            placeholder: null
             providesThumbs: false
+            readonly: false
+            requirable: true
             required: false
+            rows: null
             tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 01190c9c-7218-4c33-b008-d65211da96ac
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 1417cccc-ab33-480d-b15d-401ab55c9029 # intro text
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: fcfda9da-9d9d-4deb-8072-88f8d963fd71
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: 6ef56735-09d7-4ef4-bc2d-9ae42f281c24
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 4d265f2c-1932-4d4b-9d0e-f29acf60d6d9
+        uid: c18930d8-34f7-4448-8ba6-4bc97ae1f4f3
         userCondition: null
-handle: homepage
-hasTitleField: true
-icon: house
-name: homepage
-showSlugField: true
-showStatusField: true
-slugTranslationKeyFormat: null
-slugTranslationMethod: site
-titleFormat: ''
+fs: sportPage
+handle: sportPage
+name: 'sport page'
+sortOrder: 2
+subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

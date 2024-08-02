@@ -1,0 +1,50 @@
+color: null
+fieldLayouts:
+  c68f5edd-139b-4c74-9561-77723235f2ed:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: aec1e6d7-4600-4b5c-a51b-45cca9e96657
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9cf5e04d-b486-4440-9523-cbfc33676f85
+        userCondition: null
+handle: storeCategories
+hasTitleField: true
+icon: filter
+name: 'store categories'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

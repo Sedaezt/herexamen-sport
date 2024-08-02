@@ -1,43 +1,37 @@
 {% extends "_layout" %}
 
 {% block content %}
-  <section class="header-section">
-    <h1 style="font-size: 32px; text-align: left;">Welcome bij Fit&Active</h1>
-  {#   {% set mainEntry = craft.entries().section('homepage').one() %}
-    {% if mainEntry %}
-      {% set mainImage = mainEntry.mainImage() %}
-      {% if mainImage %}
-        <img src="{{ mainImage.url }}" alt="Fit&Active Main Image" class="header-banner">
-      {% else %}
-        <p>No header image available.</p>
-      {% endif %}
-    {% else %}
-      <p>No homepage entry found.</p>
-    {% endif %}
-  </section> #}
+   <section class="header-section">
+    <h1 style="font-size: 32px; text-align: left; ">Welcome to Fit&Active</h1>
 
-  <section class="news-section">
-    {% set entries = craft.entries().section('homepage').all() %}
+
+
+
+   <section class="news-section">
+    {% set entries = craft.entries().section('homepage').all %}
     {% for entry in entries %}
       <article>
         <picture>
           {% set bannerImage = entry.bannerImage.one() %}
           {% if bannerImage %}
-            <source media="(max-width:959px)" srcset="{{ bannerImage.url('banner') }}">
-            <source media="(min-width:960px)" srcset="{{ bannerImage.url('thumbnail') }}">
-            <img src="{{ bannerImage.url('banner') }}" alt="">
-          {% else %}
-            <img src="/path/to/default-image.jpg" alt="Default Image">
+            {# <source media="(max-width:959px)" srcset="{{ bannerImage.url('banner') }}">
+            <source media="(min-width:960px)" srcset="{{ bannerImage.url('thumbnail') }}">  #}
+             <img src="{{ bannerImage.url('banner') }}" alt=""> 
           {% endif %}
         </picture>
         <div>
-          <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
+          <h2><a href="{{ url('sport') }}">{{ entry.title }}</a></h2>
           <p>{{ entry.introText }}</p>
           <p>{{ entry.fullText }}</p>
-          <a href="{{ entry.url }}">see more</a>
         </div>
       </article>
-    {% endfor %}
-    {# <a class="button btn-more" href="/homepage">More News</a> #}
-  </section>
-{% endblock %}
+
+
+
+    {% endfor %}   
+    {# <a class="button btn-more" href="_allhomepage.twig">More News</a> #}
+     </section>    
+
+
+
+{% endblock %} 

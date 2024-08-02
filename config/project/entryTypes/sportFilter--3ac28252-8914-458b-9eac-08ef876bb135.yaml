@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  e27b7e8d-8b29-4978-9429-942ee429e12e:
+  92e241c9-f776-4157-8e37-8a136cd558e1:
     tabs:
       -
         elementCondition: null
@@ -30,7 +30,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 8cc394f9-213a-47c3-8e28-6d44beea0932
+            uid: d374f08f-4e93-4d17-94a8-1f3458fff6e3
             userCondition: null
             warning: null
             width: 100
@@ -45,7 +45,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 01190c9c-7218-4c33-b008-d65211da96ac
+            uid: 08d25e3d-7de3-4d9a-8ead-5821306c5126
             userCondition: null
             warning: null
             width: 100
@@ -60,17 +60,47 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: fcfda9da-9d9d-4deb-8072-88f8d963fd71
+            uid: e7c5355d-8d01-485d-9e85-965ebd3e43ea
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7cec1d6b-4c59-4e82-ab8a-7fdb24c20465 # rich text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d0b9af4b-095d-49ee-9050-88ab0e5b7a71
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: cbde35a6-4486-4ff7-a600-733a073e266a #  store categories
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e94f87dc-b2f7-467e-bb08-84c3a140326f
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 4d265f2c-1932-4d4b-9d0e-f29acf60d6d9
+        uid: 0cecfaf6-800a-4da4-892e-e351ad5c25c5
         userCondition: null
-handle: homepage
+handle: sportFilter
 hasTitleField: true
-icon: house
-name: homepage
+icon: ''
+name: 'sport fitler'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

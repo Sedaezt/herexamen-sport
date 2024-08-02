@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: bannerImage
+handle: detailImage
 instructions: null
-name: 'banner image'
+name: 'detail image'
 searchable: false
 settings:
   allowSelfRelations: false

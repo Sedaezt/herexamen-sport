@@ -1,10 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 45fffe05-b731-48ec-9532-e07d8d939850 # homepage
-handle: homepage
+  - 3ac28252-8914-458b-9eac-08ef876bb135 # sport fitler
+handle: sportFilter
 maxAuthors: 1
-name: homepage
+name: 'sport filter'
 previewTargets:
   -
     __assoc__:
@@ -21,7 +21,7 @@ propagationMethod: all
 siteSettings:
   49d23e08-aa8f-459b-af22-ff6498494a3d: # Sport
     enabledByDefault: true
-    hasUrls: false
-    template: null
-    uriFormat: null
-type: single
+    hasUrls: true
+    template: sport.twig
+    uriFormat: 'sport/{slug}'
+type: channel

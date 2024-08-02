@@ -1,10 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 45fffe05-b731-48ec-9532-e07d8d939850 # homepage
-handle: homeDetail
+  - 759b3c6e-f6ec-4443-a57e-6b1f254a139f # store categories
+handle: storeCategories
 maxAuthors: 1
-name: 'home detail'
+name: 'store categories'
 previewTargets:
   -
     __assoc__:
@@ -22,6 +22,9 @@ siteSettings:
   49d23e08-aa8f-459b-af22-ff6498494a3d: # Sport
     enabledByDefault: true
     hasUrls: true
-    template: home-detail/_entry
-    uriFormat: 'home-detail/{slug}'
-type: channel
+    template: sport.twig
+    uriFormat: 'store-categories/{slug}'
+structure:
+  maxLevels: null
+  uid: ab13392f-8d79-44dd-9f67-c4fc4e445558
+type: structure

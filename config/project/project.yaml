@@ -1,4 +1,4 @@
-dateModified: 1722178939
+dateModified: 1722621446
 email:
   fromEmail: sedaezzat@icloud.com
   fromName: Sport
@@ -11,32 +11,49 @@ fs:
       path: '@webroot/images'
     type: craft\fs\Local
     url: '@web/images'
+  sportPage:
+    hasUrls: true
+    name: 'sport page'
+    settings:
+      path: '@webroot/images/sportPage'
+    type: craft\fs\Local
+    url: '@web/images/sportPage'
 meta:
   __names__:
+    3ac28252-8914-458b-9eac-08ef876bb135: 'sport fitler' # sport fitler
     5bd4c651-f112-4f11-8851-732d9c6c7b58: 'banner image' # banner image
     5c0a68b4-516d-4e33-a060-bd654f3e0213: 'phone number' # phone number
     7cec1d6b-4c59-4e82-ab8a-7fdb24c20465: 'rich text' # rich text
-    7e9bf105-b884-4c5d-9218-047703c51ec6: 'home detail' # home detail
+    8afe44de-0ea6-4b30-afe0-87c0a07ad162: 'store url' # store url
     24b335d5-9e12-4faf-a1de-02925c8d7606: 'homepage asssets' # homepage asssets
     31dfce39-3d42-40a1-85e2-3230c8259b72: 'main image' # main image
     44cd1cbe-d5ab-4cd5-92c2-da3c31250bf9: footer # footer
     45fffe05-b731-48ec-9532-e07d8d939850: homepage # homepage
     49d23e08-aa8f-459b-af22-ff6498494a3d: Sport # Sport
+    74dc0981-c0f4-40d0-b935-d716a9c31c38: 'detail pagina' # detail pagina
     671adc41-c795-47a7-a032-75cc596ca3c0: Sport # Sport
+    759b3c6e-f6ec-4443-a57e-6b1f254a139f: 'store categories' # store categories
     893a89cf-fdf1-45cf-bfaa-8353d01eb5d5: links # links
     1417cccc-ab33-480d-b15d-401ab55c9029: 'intro text' # intro text
+    5527f962-4062-4c08-8087-c5f1c7e1533e: 'sport filter' # sport filter
     8198bac8-efc9-4a7c-87c2-8cff3f53d6d0: banner # banner
     86017f27-1e19-42a4-8dfe-6a74d3065132: 'Public Schema' # Public Schema
+    430782b0-fd0e-48cc-a200-6728cc6ff309: detail # detail
+    89814074-7ebf-4a34-8ee0-82e6cfe638f4: 'detail pagina' # detail pagina
     a3eb63ed-c51d-4923-974c-6a330cc82d64: thumbnail # thumbnail
     b3c4ea91-8c24-4e93-9fab-c86e31f31d96: header # header
     c2cf347b-466e-49d8-a51f-ee2665ded79e: 'about us' # about us
     c6c1c12c-b89e-40d5-bae5-34b679cd7436: footer # footer
     c4277b1f-b97c-4110-8714-81968a65d02d: homepage # homepage
     c491729c-afce-4e5c-9296-85d7fbe40364: 'header title' # header title
+    cbde35a6-4486-4ff7-a600-733a073e266a: ' store categories' #  store categories
     cd06fc77-8527-46df-b19d-47534adb8b27: 'full text' # full text
     d78a8aeb-4963-46e8-86e7-2cf811ffd6a4: 'header title' # header title
+    de43d3e1-62fe-4518-9df7-1d64d1f58186: 'detail image' # detail image
     e7396f08-38b4-4e31-bee9-8a16aa280db5: 'main image' # main image
     f1e3d31f-5f80-4242-a1de-705fe869d7a8: email # email
+    fcf7b86f-4b45-4605-accd-efad5ab960a9: 'sport page' # sport page
+    ff0e615c-25d4-4716-a2b8-dcddcdf93c51: 'store categories' # store categories
 plugins:
   abm-tinymce:
     edition: standard

@@ -28,13 +28,10 @@ a {
 
 .header-section {
   text-align: left; 
-  margin: 20px;
+  margin: 40px;
 }
 
-.header-section h1 {
-  font-size: 32px;
-  margin: 0; 
-}
+
 
 .header-banner {
   width: 100%;
@@ -56,7 +53,7 @@ h2 a:hover {
 }
 
 .news-section {
-  padding: 2em;
+  padding: 4em;
 }
 
 .btn-more {
@@ -127,6 +124,7 @@ h2 a:hover {
 }
 
 
+
 .plugin-categories {
   padding: 1rem 0 0 0;
   display: flex;
@@ -137,7 +135,33 @@ h2 a:hover {
   margin-right: auto;
   flex: 0 0 100%;
   flex-wrap: wrap;
+
+
 }
+
+
+.plugin-categories input {
+  display: none;
+
+
+}
+
+.plugin-categories label {
+  border: 2px solid var(--main-color);
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 1.5rem;
+
+}
+
+.plugin-categories label:has(input:checked) {
+
+  color: var(--background-color);
+  background-color: var(--main-color-hover);
+}
+
+
+
 
 /* hamburger menu */
 @media only screen and (max-width: 959px) {
@@ -269,6 +293,7 @@ h2 a:hover {
   }
 
   .news-section article img {
+    max-width: 2000px;
     margin: 0;
   }
 
