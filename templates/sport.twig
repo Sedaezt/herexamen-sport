@@ -18,8 +18,12 @@
     >
         <img src="{{entry.bannerImage.one().url('detail')}}" alt="">
         <div>
-          <h2><a href="{{entry.storeUrl}}">{{entry.title}}</a></h2>
+          <h2><a href="{{entry.url}}">{{entry.title}}</a></h2>
           <p>{{entry.introText}}<p>
+          <p>{{entry.fullText}}<p>
+
+          {# <p>{{entry.richText}}<p> #}
+
           <div class="categories">
             {% for category in entry.storeCategories %}
               <span>{{category}}</span>

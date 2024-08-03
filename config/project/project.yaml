@@ -1,4 +1,4 @@
-dateModified: 1722621446
+dateModified: 1722693201
 email:
   fromEmail: sedaezzat@icloud.com
   fromName: Sport
@@ -30,6 +30,7 @@ meta:
     44cd1cbe-d5ab-4cd5-92c2-da3c31250bf9: footer # footer
     45fffe05-b731-48ec-9532-e07d8d939850: homepage # homepage
     49d23e08-aa8f-459b-af22-ff6498494a3d: Sport # Sport
+    56cdb99b-338e-4eac-b2a7-b4c91108f8df: 'sport detail pagina' # sport detail pagina
     74dc0981-c0f4-40d0-b935-d716a9c31c38: 'detail pagina' # detail pagina
     671adc41-c795-47a7-a032-75cc596ca3c0: Sport # Sport
     759b3c6e-f6ec-4443-a57e-6b1f254a139f: 'store categories' # store categories

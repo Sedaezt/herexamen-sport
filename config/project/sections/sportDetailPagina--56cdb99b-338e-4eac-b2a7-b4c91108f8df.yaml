@@ -1,10 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 3ac28252-8914-458b-9eac-08ef876bb135 # sport fitler
-handle: sportFilter
+  - 74dc0981-c0f4-40d0-b935-d716a9c31c38 # detail pagina
+handle: sportDetailPagina
 maxAuthors: 1
-name: 'sport filter'
+name: 'sport detail pagina'
 previewTargets:
   -
     __assoc__:
@@ -22,6 +22,6 @@ siteSettings:
   49d23e08-aa8f-459b-af22-ff6498494a3d: # Sport
     enabledByDefault: true
     hasUrls: true
-    template: categories/entry.twig
+    template: categories/_sportdetail.twig
     uriFormat: 'sport/{slug}'
 type: channel

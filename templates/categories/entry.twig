@@ -1,41 +1,19 @@
+{# DETAIL PAGINA VAN SPORT #}
 {% extends "_layout.twig" %}
 
 {% block content %}
- {# <section class="article-details">
-    <a href="{{ url('sport') }}"> <!-- Link naar de sportpagina -->
-        <img src="{{ entry.bannerImage.one().url('header') }}" alt="Banner Image">
-    </a>
-    <h1>{{ entry.title }}</h1>
-    <p>{{ entry.introText }}</p>
-    <p>{{ entry.fullText }}</p>
-</section>  #}
-
-
-
-
- {# <section class="news-section"> 
-     {% set entries = craft.entries().section('detailPagina') %}
-      <article>
-        <picture>
-          {% set bannerImage = entry.bannerImage.one() %}
-           {% if bannerImage %}
-            <source media="(max-width:959px)" srcset="{{ bannerImage.url('banner') }}">
-            <source media="(min-width:960px)" srcset="{{ bannerImage.url('thumbnail') }}">
-            <img src="{{ bannerImage.url('banner') }}" alt="">
-          {% endif %} 
-         </picture>
-        <div>
-          <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
-          <p>{{ entry.introText }}</p>
-          <p>{{ entry.fullText }}</p>
-        </div>
-      </article>   #}
- 
-
-
-
-
-
-
+    <section class="article-details">
+        <img src="{{entry.bannerImage.one().url('detail')}}" alt="">
+        <h2>{{entry.title}}</h2>
+            <p>{{entry.introText}}<p>
+          <p>{{entry.fullText}}<p>
+        <p>{{entry.richText}}</p>
+    </section>
+    
 {% endblock %}
+
+
+
+
+
 

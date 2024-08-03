@@ -51,7 +51,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: cd06fc77-8527-46df-b19d-47534adb8b27 # full text
+            fieldUid: 1417cccc-ab33-480d-b15d-401ab55c9029 # intro text
             handle: null
             includeInCards: false
             instructions: null
@@ -60,7 +60,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 7d15af1b-054a-40c2-b7a9-e2e8969b995e
+            uid: abc2b736-8138-4a30-8b11-3be0ac8527af
             userCondition: null
             warning: null
             width: 100
