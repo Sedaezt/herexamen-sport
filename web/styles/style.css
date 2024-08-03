@@ -1,3 +1,4 @@
+/* navigatie */
 nav {
   position: relative;
 }
@@ -31,41 +32,8 @@ a {
   margin: 40px;
 }
 
-
-
-.header-banner {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px 0;
-  max-height: 300px; /* Of een andere geschikte hoogte voor een banner */
-  object-fit: cover; /* Zorgt ervoor dat de afbeelding de container vult */
-}
-
-h2 a:hover {
-  text-decoration: underline;
-}
-
-.button {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .news-section {
-  padding: 4em;
-}
-
-.btn-more {
-  display: block;
-  text-align: center;
-  width: 100px;
-  transition: all 0.5s;
-}
-
-.btn-more:hover {
-  background-color: var(--main-color-hover);
-  color: var(--background-color);
+  padding: 1em;
 }
 
 .news-section article {
@@ -100,7 +68,7 @@ h2 a:hover {
   border: 1px solid var(--background-color);
 }
 
-
+/* detail pagina van sport */
 .article-details {
   max-width: 800px;
   background-color: var(--background-color);
@@ -124,9 +92,7 @@ h2 a:hover {
   margin-left: 2rem;
 }
 
-
-
-
+/* sport main page */
 .plugin-categories {
   padding: 1rem 0 0 0;
   display: flex;
@@ -137,15 +103,10 @@ h2 a:hover {
   margin-right: auto;
   flex: 0 0 100%;
   flex-wrap: wrap;
-
-
 }
-
 
 .plugin-categories input {
   display: none;
-
-
 }
 
 .plugin-categories label {
@@ -153,19 +114,14 @@ h2 a:hover {
   border-radius: 12px;
   padding: 12px;
   margin-top: 1.5rem;
-
 }
 
 .plugin-categories label:has(input:checked) {
-
   color: var(--background-color);
   background-color: var(--main-color-hover);
 }
 
-
-
-
-/* hamburger menu */
+/* HAMBURGER MENU */
 @media only screen and (max-width: 959px) {
   #nav-menu {
     position: fixed;
@@ -244,9 +200,7 @@ h2 a:hover {
   }
 }
 
-
-
-/* tablet formaat */
+/* TABLET FORMAAT */
 @media only screen and (min-width: 960px) {
   .header-container {
     display: flex;
@@ -264,7 +218,7 @@ h2 a:hover {
   .header-section {
     margin: 50px;
   }
-  
+
   .nav-menu {
     display: flex;
     align-items: center;
@@ -286,23 +240,18 @@ h2 a:hover {
     color: var(--background-color);
     font-size: var(--font-size-h3-mobile);
   }
- 
-  
+
   .all-news.news-section {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Three columns layout */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 1.5em;
-    max-width: 1000px; /* Adjust width to fit your design */
+    max-width: 1000px; 
     margin-left: auto;
     margin-right: auto;
   }
-
-  
-
-
-
 }
 
+/* FOOTER */
 .site-footer {
   background-color: var(--main-color);
   color: #fff;
@@ -357,9 +306,10 @@ h2 a:hover {
 .site-footer .footer-bottom {
   text-align: center;
   margin-top: 20px;
-  border-top: 1px solid #444;
+  border-top: 1px solid #ffffff;
   padding-top: 10px;
 }
+
 
 @media (max-width: 960px) {
   .site-footer .footer-content {

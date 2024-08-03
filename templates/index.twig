@@ -4,9 +4,6 @@
    <section class="header-section">
     <h1 style="font-size: 32px; text-align: left; ">Welcome to Fit&Active</h1>
 
-
-
-
    <section class="news-section">
     {% set entries = craft.entries().section('homepage').all %}
     {% for entry in entries %}
@@ -25,13 +22,11 @@
           <p>{{ entry.fullText }}</p>
         </div>
       </article>
-
-
-
     {% endfor %}   
-    {# <a class="button btn-more" href="_allhomepage.twig">More News</a> #}
      </section>    
 
+    
+    {% include "categories/_allhomepage.twig" %}
 
 
 {% endblock %} 
