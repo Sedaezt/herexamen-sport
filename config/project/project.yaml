@@ -1,4 +1,4 @@
-dateModified: 1722693201
+dateModified: 1722863149
 email:
   fromEmail: sedaezzat@icloud.com
   fromName: Sport
@@ -40,10 +40,11 @@ meta:
     8198bac8-efc9-4a7c-87c2-8cff3f53d6d0: banner # banner
     86017f27-1e19-42a4-8dfe-6a74d3065132: 'Public Schema' # Public Schema
     430782b0-fd0e-48cc-a200-6728cc6ff309: detail # detail
+    01679182-24da-4d70-adda-ce0ba58c1c91: 'main banner' # main banner
     89814074-7ebf-4a34-8ee0-82e6cfe638f4: 'detail pagina' # detail pagina
+    a07fd20c-3e0e-453d-b8ba-4b88f449696b: 'about us' # about us
     a3eb63ed-c51d-4923-974c-6a330cc82d64: thumbnail # thumbnail
     b3c4ea91-8c24-4e93-9fab-c86e31f31d96: header # header
-    c2cf347b-466e-49d8-a51f-ee2665ded79e: 'about us' # about us
     c6c1c12c-b89e-40d5-bae5-34b679cd7436: footer # footer
     c4277b1f-b97c-4110-8714-81968a65d02d: homepage # homepage
     c491729c-afce-4e5c-9296-85d7fbe40364: 'header title' # header title

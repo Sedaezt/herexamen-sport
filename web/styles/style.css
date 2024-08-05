@@ -32,8 +32,20 @@ a {
   margin: 40px;
 }
 
+.header-section picture img {
+  max-width: 100%; 
+  width: 100%; 
+  height: auto; 
+  display: block;
+  margin: 0 auto;
+}
+
 .news-section {
   padding: 1em;
+}
+
+.margin {
+  margin-bottom: 100px;
 }
 
 .news-section article {
@@ -202,6 +214,7 @@ a {
 
 /* TABLET FORMAAT */
 @media only screen and (min-width: 960px) {
+
   .header-container {
     display: flex;
     justify-content: space-between;
@@ -219,6 +232,7 @@ a {
     margin: 50px;
   }
 
+ 
   .nav-menu {
     display: flex;
     align-items: center;
@@ -250,74 +264,45 @@ a {
     margin-right: auto;
   }
 }
-
 /* FOOTER */
 .site-footer {
-  background-color: var(--main-color);
-  color: #fff;
-  padding: 40px 0;
-  font-size: 14px;
-}
-
-.site-footer .footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  background-color: var(--main-color); 
+  color: var(--background-color); 
+  padding: 20px 20px;
+  margin: 100px 0 0;
+  width: 100%; 
   box-sizing: border-box;
 }
 
-.site-footer .footer-section {
-  flex: 1;
-  min-width: 200px;
-  margin: 10px 20px;
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
 }
 
-.site-footer h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.site-footer p {
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-.site-footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.site-footer a:hover {
-  text-decoration: underline;
-}
-
-.site-footer .footer-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.site-footer .footer-section ul li {
-  margin-bottom: 10px;
-}
-
-.site-footer .footer-bottom {
+.footer-bottom {
   text-align: center;
   margin-top: 20px;
-  border-top: 1px solid #ffffff;
-  padding-top: 10px;
+  padding: 10px 0;
+}
+
+@media (min-width: 960px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 45%; /* Optioneel: minimum breedte instellen */
+}
+
+.footer-section.about {
+    margin-right: 100px; /* Ruimte tussen de secties */
+}
 }
 
 
-@media (max-width: 960px) {
-  .site-footer .footer-content {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .site-footer .footer-section {
-    margin: 10px 0;
-  }
-}
+

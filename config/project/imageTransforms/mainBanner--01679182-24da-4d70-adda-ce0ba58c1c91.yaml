@@ -1,10 +1,10 @@
 fill: null
 format: null
-handle: banner
+handle: mainBanner
 height: 400
 interlace: none
-mode: fit
-name: banner
+mode: crop
+name: 'main banner'
 position: center-center
 quality: null
 upscale: true
