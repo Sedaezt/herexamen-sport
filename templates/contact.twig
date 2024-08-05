@@ -1,0 +1,35 @@
+{% extends "_layout.twig" %}
+
+{% block content %}
+    {# Haal de entry op uit de juiste sectie #}
+    {% set entry = craft.entries.section('contactPagina').one() %}
+
+    {# Zorg ervoor dat de entry bestaat voordat je deze gebruikt #}
+    {% if entry %}
+        <section class="contact">
+            <h1>{{ entry.title }}</h1>
+        
+
+            <div class="full-text">
+                {{ entry.fullText }}
+            </div>
+
+            <div class="rich-text">
+                {{ entry.richText }}
+            </div>
+
+            <section class="about-us">
+                <h2>About Us</h2>
+                {{ entry.aboutUs }}
+            </section>
+
+            <section class="contact-us">
+                <h2>Contact Us</h2>
+                <p>Email: <a href="mailto:{{ entry.email }}">{{ entry.email }}</a></p>
+                <p>Phone: {{ entry.phoneNumber }}</p>
+            </section>
+        </section>
+    {% else %}
+        <p>Sorry, no content available at this moment.</p>
+    {% endif %}
+{% endblock %}

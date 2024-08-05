@@ -1,10 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 74dc0981-c0f4-40d0-b935-d716a9c31c38 # detail pagina
-handle: sportDetailPagina
+  - cf52bf10-5d39-414e-9642-0c6c48aead7d # contact pagina
+handle: contactPagina
 maxAuthors: 1
-name: 'sport detail pagina'
+name: 'Contact pagina'
 previewTargets:
   -
     __assoc__:
@@ -22,6 +22,6 @@ siteSettings:
   49d23e08-aa8f-459b-af22-ff6498494a3d: # Sport
     enabledByDefault: true
     hasUrls: true
-    template: categories/_sportdetail.twig
-    uriFormat: 'sport/{slug}'
-type: channel
+    template: contact.twig
+    uriFormat: contact-pagina
+type: single

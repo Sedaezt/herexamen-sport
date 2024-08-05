@@ -1,3 +1,4 @@
+{# SPORT PAGINA #}
 {% extends "_layout.twig" %}
 
 {% block content %}
@@ -21,9 +22,6 @@
           <h2><a href="{{entry.url}}">{{entry.title}}</a></h2>
           <p>{{entry.introText}}<p>
           <p>{{entry.fullText}}<p>
-
-          {# <p>{{entry.richText}}<p> #}
-
           <div class="categories">
             {% for category in entry.storeCategories %}
               <span>{{category}}</span>
@@ -39,7 +37,6 @@
     document.querySelectorAll(".plugin-categories input").forEach((element) => {
       element.addEventListener("change", onSelectCategory);
     });
-
 
     function onSelectCategory(e) {
       console.log("change");
@@ -58,9 +55,7 @@
       console.log("updateGrid");
       document.querySelectorAll(".news-section article").forEach((el) => {
         el.style.display = "none";
-        // console.log(selectedCategories);
         for (let i = 0; i < selectedCategories.length; i++) {
-          // console.log(el.hasAttribute("data-" + selectedCategories[i]));
           if (el.hasAttribute("data-" + selectedCategories[i])) {
             el.style.display = "block";
           }
