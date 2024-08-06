@@ -1,4 +1,12 @@
 /* navigatie */
+.header-title {
+  color: #ffffff; /* Zet de tekstkleur op wit of een andere gewenste kleur */
+}
+
+.header-title a {
+  color: #ffffff; /* Zorg ervoor dat links binnen de richText ook zichtbaar zijn */
+}
+
 nav {
   position: relative;
 }
@@ -201,7 +209,6 @@ a {
   text-decoration: underline;
 }
 
-/* Media queries voor betere responsiviteit */
 @media (max-width: 768px) {
   .contact {
       padding: 1rem;
@@ -316,12 +323,6 @@ a {
     padding: var(--padding-medium);
   }
 
-  .header-title {
-    font-size: var(--font-size-h3);
-    font-weight: bold;
-    color: var(--background-color);
-  }
-
   .header-section {
     margin: 50px;
   }
@@ -396,7 +397,3 @@ a {
     margin-right: 100px; /* Ruimte tussen de secties */
 }
 }
-
-
-
-

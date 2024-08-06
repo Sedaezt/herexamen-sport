@@ -7,15 +7,16 @@
     <title>{{siteName}}</title>
     {% do craft.app.view.registerCssFile('@web/styles/normalize.css') %}
     {% do craft.app.view.registerCssFile('@web/styles/shared.css?148358') %}
-    {% do craft.app.view.registerCssFile('@web/styles/style.css?123588') %}
+    {% do craft.app.view.registerCssFile('@web/styles/style.css?123590') %}
 </head>
 <body>
     <header>
         <div class="header-container">
             {% set headerTitle = craft.entries().section('headerTitle').one() %}
             <div class="header-title">
+                        <a href="{{ siteUrl }}">
                 {{ headerTitle.richText }}
-            </div>
+            </a>            </div>
             <nav class="nav-menu">
                 <input type="checkbox" name="menu-toggle" id="menu-toggle"/>
                 <span></span>
@@ -32,10 +33,8 @@
     </header>
 
     {% block content %}
-    {# hier komt de content #}
-    {% endblock %}
 
-    
+    {% endblock %}
 
     {% include 'categories/footer.twig' %}
 
