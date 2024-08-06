@@ -2,31 +2,29 @@
 
 {% block content %}
     {# Haal de entry op uit de juiste sectie #}
-    {% set entry = craft.entries.section('contactPagina').one() %}
+    {% set contact = craft.entries.section('contactPagina').one() %}
 
     {# Zorg ervoor dat de entry bestaat voordat je deze gebruikt #}
-    {% if entry %}
+    {% if contact %}
         <section class="contact">
-            <h1>{{ entry.title }}</h1>
-        
-
-            <div class="full-text">
-                {{ entry.fullText }}
-            </div>
+            <h1>{{ contact.title }}</h1>
 
             <div class="rich-text">
-                {{ entry.richText }}
+                {{ contact.richText }}
             </div>
 
             <section class="about-us">
                 <h2>About Us</h2>
-                {{ entry.aboutUs }}
+                {{ contact.aboutUs }}
             </section>
 
             <section class="contact-us">
                 <h2>Contact Us</h2>
-                <p>Email: <a href="mailto:{{ entry.email }}">{{ entry.email }}</a></p>
-                <p>Phone: {{ entry.phoneNumber }}</p>
+                <p>Email: <a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>
+                <p>Phone: {{ contact.phoneNumber }}</p>
+                <p>Address: {{ contact.fullText }}</p>
+                <p>Opening hours: {{ contact.introText }}</p>
+
             </section>
         </section>
     {% else %}

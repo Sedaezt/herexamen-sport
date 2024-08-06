@@ -36,21 +36,6 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: cd06fc77-8527-46df-b19d-47534adb8b27 # full text
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: cd17b197-b207-45ec-bd9c-959af2bb3278
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
             fieldUid: 7cec1d6b-4c59-4e82-ab8a-7fdb24c20465 # rich text
             handle: null
             includeInCards: false
@@ -61,6 +46,21 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 9ea796ba-5393-4dbd-b91b-3e3d6c118b6e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a07fd20c-3e0e-453d-b8ba-4b88f449696b # about us
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5c1122da-e915-42a6-9a22-090f3adc6f88
             userCondition: null
             warning: null
             width: 100
@@ -81,21 +81,6 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: a07fd20c-3e0e-453d-b8ba-4b88f449696b # about us
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 3d99b929-b193-4cc2-ad8b-c9e0f0372e58
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
             fieldUid: 5c0a68b4-516d-4e33-a060-bd654f3e0213 # phone number
             handle: null
             includeInCards: false
@@ -106,6 +91,36 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 34bee877-c12d-48a1-a4d1-ba47e838d005
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: cd06fc77-8527-46df-b19d-47534adb8b27 # full text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9bda23e1-e5c3-42a3-bdaa-aa5bf2e8973a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1417cccc-ab33-480d-b15d-401ab55c9029 # intro text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: daec4e1e-c0b5-451a-9a56-9b3333cb2f1f
             userCondition: null
             warning: null
             width: 100

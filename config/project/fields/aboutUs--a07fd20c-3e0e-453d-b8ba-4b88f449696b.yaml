@@ -4,13 +4,17 @@ instructions: null
 name: 'about us'
 searchable: false
 settings:
-  byteLimit: null
-  charLimit: null
-  code: false
-  initialRows: 4
-  multiline: false
-  placeholder: null
-  uiMode: normal
+  availableTransforms: '*'
+  availableVolumes: '*'
+  purifierConfig: Default.json
+  purifyHtml: true
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  tinymceConfig: Default.json
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\PlainText
+type: abmat\tinymce\Field

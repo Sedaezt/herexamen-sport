@@ -1,4 +1,4 @@
-dateModified: 1722881023
+dateModified: 1722957763
 email:
   fromEmail: sedaezzat@icloud.com
   fromName: Sport
@@ -58,6 +58,14 @@ meta:
     ff0e615c-25d4-4716-a2b8-dcddcdf93c51: 'store categories' # store categories
 plugins:
   abm-tinymce:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  expanded-singles:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  typogrify:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
