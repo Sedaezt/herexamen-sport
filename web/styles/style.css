@@ -390,10 +390,10 @@ a {
 
 .footer-section {
     flex: 1;
-    min-width: 45%; /* Optioneel: minimum breedte instellen */
+    min-width: 45%; 
 }
 
 .footer-section.about {
-    margin-right: 100px; /* Ruimte tussen de secties */
+    margin-right: 100px; 
 }
 }

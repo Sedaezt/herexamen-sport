@@ -1,10 +1,8 @@
 {% extends "_layout.twig" %}
 
 {% block content %}
-    {# Haal de entry op uit de juiste sectie #}
     {% set contact = craft.entries.section('contactPagina').one() %}
 
-    {# Zorg ervoor dat de entry bestaat voordat je deze gebruikt #}
     {% if contact %}
         <section class="contact">
             <h1>{{ contact.title }}</h1>
@@ -27,7 +25,6 @@
 
             </section>
         </section>
-    {% else %}
-        <p>Sorry, no content available at this moment.</p>
+ 
     {% endif %}
 {% endblock %}

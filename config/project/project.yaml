@@ -1,4 +1,4 @@
-dateModified: 1722957763
+dateModified: 1722964183
 email:
   fromEmail: sedaezzat@icloud.com
   fromName: Sport
@@ -20,6 +20,7 @@ fs:
     url: '@web/images/sportPage'
 meta:
   __names__:
+    2a37bbff-0b4b-4016-8566-cdf82f31f3e3: accesoires # accesoires
     3ac28252-8914-458b-9eac-08ef876bb135: 'sport fitler' # sport fitler
     5bd4c651-f112-4f11-8851-732d9c6c7b58: 'banner image' # banner image
     5c0a68b4-516d-4e33-a060-bd654f3e0213: 'phone number' # phone number
@@ -43,6 +44,7 @@ meta:
     01679182-24da-4d70-adda-ce0ba58c1c91: 'main banner' # main banner
     a07fd20c-3e0e-453d-b8ba-4b88f449696b: 'about us' # about us
     a3eb63ed-c51d-4923-974c-6a330cc82d64: thumbnail # thumbnail
+    aa760010-4b23-4ba6-b24e-ba8ced5c491d: accesoires # accesoires
     b3c4ea91-8c24-4e93-9fab-c86e31f31d96: header # header
     c6c1c12c-b89e-40d5-bae5-34b679cd7436: footer # footer
     c4277b1f-b97c-4110-8714-81968a65d02d: homepage # homepage

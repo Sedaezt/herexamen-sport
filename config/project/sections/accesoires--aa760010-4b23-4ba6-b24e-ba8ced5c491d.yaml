@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 2a37bbff-0b4b-4016-8566-cdf82f31f3e3 # accesoires
+handle: accesoires
+maxAuthors: 1
+name: accesoires
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  49d23e08-aa8f-459b-af22-ff6498494a3d: # Sport
+    enabledByDefault: true
+    hasUrls: true
+    template: accesoires.twig
+    uriFormat: 'accesoires/{slug}'
+type: channel
