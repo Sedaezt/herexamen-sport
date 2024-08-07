@@ -1,9 +1,16 @@
-dateModified: 1722964183
+dateModified: 1723028260
 email:
   fromEmail: sedaezzat@icloud.com
   fromName: Sport
   transportType: craft\mail\transportadapters\Sendmail
 fs:
+  asset:
+    hasUrls: true
+    name: asset
+    settings:
+      path: '@webroot/images/accesoires'
+    type: craft\fs\Local
+    url: '@web/images/accesoires'
   assets:
     hasUrls: true
     name: assets
@@ -24,6 +31,7 @@ meta:
     3ac28252-8914-458b-9eac-08ef876bb135: 'sport fitler' # sport fitler
     5bd4c651-f112-4f11-8851-732d9c6c7b58: 'banner image' # banner image
     5c0a68b4-516d-4e33-a060-bd654f3e0213: 'phone number' # phone number
+    5c441f6f-7006-43ec-929e-34cfd76924e0: accesoires # accesoires
     7cec1d6b-4c59-4e82-ab8a-7fdb24c20465: 'rich text' # rich text
     8afe44de-0ea6-4b30-afe0-87c0a07ad162: 'store url' # store url
     24b335d5-9e12-4faf-a1de-02925c8d7606: 'homepage asssets' # homepage asssets
@@ -42,6 +50,7 @@ meta:
     86017f27-1e19-42a4-8dfe-6a74d3065132: 'Public Schema' # Public Schema
     430782b0-fd0e-48cc-a200-6728cc6ff309: detail # detail
     01679182-24da-4d70-adda-ce0ba58c1c91: 'main banner' # main banner
+    9022336e-4ca6-440f-9c19-3f878aa04396: 'image slider' # image slider
     a07fd20c-3e0e-453d-b8ba-4b88f449696b: 'about us' # about us
     a3eb63ed-c51d-4923-974c-6a330cc82d64: thumbnail # thumbnail
     aa760010-4b23-4ba6-b24e-ba8ced5c491d: accesoires # accesoires

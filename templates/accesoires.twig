@@ -2,9 +2,77 @@
 
 {% block content %}
     {% set accesoires = craft.entries.section('accesoires').one() %}
+    
+    <h1>{{ accesoires.title }}</h1>
+    <p>{{ accesoires.introText }}</p>
 
+    {% set images = accesoires.imageSlider.all() %}
 
+    <div class="slider">
+        <div class="slides">
+            {% for image in images %}
+                <div class="slide">
+                    <img src="{{ image.url }}" alt="{{ image.title }}">
+                </div>
+            {% endfor %}
+        </div>
 
+        <div class="controls">
+            <button class="prev-slide">← Vorige</button>
+            <button class="next-slide">Volgende →</button>
+        </div>
+    </div>
+
+    <div class="full-text">
+        {{ accesoires.fullText }}
+    </div>
+
+    <style>
+     .slider {
+    position: relative;
+    width: 100%; /* Zorgt ervoor dat de slider de volledige breedte benut */
+    max-width: 600px; /* Stel een maximum breedte in naar wens */
+    margin: 0 auto; /* Centreer de slider */
+    overflow: hidden;
+    /* Voeg een hoogte toe om ruimte te maken voor de controls */
+    height: 400px; /* Pas dit aan afhankelijk van je afbeelding en layout */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%; /* Zorg ervoor dat elke slide de volledige breedte van de container inneemt */
+    box-sizing: border-box;
+}
+
+.controls {
+    position: absolute;
+    bottom: 10px; /* Plaats de controls dichterbij de onderkant van de slider */
+    left: 27%; /* Centreer de controls horizontaal */
+    transform: translateX(-50%); /* Verplaats de controls om ze precies in het midden te plaatsen */
+    display: flex;
+    gap: 16px; /* Zorgt voor een ruimte van 50px tussen de knoppen */
+    z-index: 10; /* Zorg ervoor dat de controls boven andere inhoud verschijnen */
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #555;
+}
+
+    </style>
 
 
 {% endblock %}
