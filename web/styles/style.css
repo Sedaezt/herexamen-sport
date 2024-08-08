@@ -211,49 +211,48 @@ a {
 
 
 /* IMAGE SLIDER */
-.slider {
-  position: relative;
-  width: 100%; 
-  max-width: 600px; 
-  margin: 0 auto; 
-  overflow: hidden;
-  height: 400px; 
+     /* .slider {
+    position: relative;
+    width: 100%; 
+    max-width: 600px; 
+    margin: 0 auto; 
+    overflow: hidden;
+    height: 400px; 
 }
 
 .slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 .slide {
-  min-width: 100%; 
-  box-sizing: border-box;
+    min-width: 100%; 
+    box-sizing: border-box;
 }
 
 .controls {
-  position: absolute;
-  bottom: 10px; 
-  left: 27%; 
-  transform: translateX(-50%); 
-  display: flex;
-  gap: 16px;
-  z-index: 10; 
+    position: absolute;
+    bottom: 10px; 
+    left: 27%; 
+    transform: translateX(-50%); 
+    display: flex;
+    gap: 16px;
+    z-index: 10; 
 }
 
 .controls button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #333;
-  color: white;
-  border: none;
-  transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
 .controls button:hover {
-  background-color: #555;
-}
-
+    background-color: #555;
+} */
 @media (max-width: 768px) {
   .contact {
       padding: 1rem;

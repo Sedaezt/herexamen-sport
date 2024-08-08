@@ -1,0 +1,24 @@
+{# {% extends "_layout.twig" %}
+
+{% block content %}
+    <h1>Zoekresultaten</h1>
+
+    {% set query = craft.app.request.getQueryParam('q') %}
+    {% set results = craft.entries()
+        .search(query)
+        .orderBy('score')
+        .all() %}
+
+    {% if results|length %}
+        <ul>
+            {% for entry in results %}
+                <li>
+                    <a href="{{ entry.url }}">{{ entry.title }}</a>
+                    <p>{{ entry.excerpt }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Geen resultaten gevonden voor "{{ query }}"</p>
+    {% endif %}
+{% endblock %} #}
