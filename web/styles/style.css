@@ -209,50 +209,65 @@ a {
   text-decoration: underline;
 }
 
+/* SEARCH */
+.search-form {
+  position: absolute; 
+  right: 25px; 
+  top: 120px; 
+}
 
-/* IMAGE SLIDER */
-     /* .slider {
-    position: relative;
-    width: 100%; 
-    max-width: 600px; 
-    margin: 0 auto; 
-    overflow: hidden;
-    height: 400px; 
+.search-form input[type="text"] {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.search-form button {
+  padding: 5px;
+}
+/* styles.css of een andere naam die je gebruikt */
+.moved-down {
+  margin-top: 100px; /* Verplaatst de sectie 100px naar beneden */
+}
+
+/* styles.css of je eigen CSS-bestand */
+ .slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Zorg ervoor dat elke slide 100% van de container breedte inneemt */
+ }
 
 .slide {
-    min-width: 100%; 
-    box-sizing: border-box;
+  min-width: 100%;
+} 
+
+ .prev-slide, .next-slide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000; /* Zodat de knoppen zichtbaar blijven boven de slides */
+ } 
+ 
+.prev-slide {
+  left: 10px;
 }
 
-.controls {
-    position: absolute;
-    bottom: 10px; 
-    left: 27%; 
-    transform: translateX(-50%); 
-    display: flex;
-    gap: 16px;
-    z-index: 10; 
-}
+.next-slide {
+  right: 10px;
+} 
 
-.controls button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #333;
-    color: white;
-    border: none;
-    transition: background-color 0.3s ease;
-}
 
-.controls button:hover {
-    background-color: #555;
-} */
+
 @media (max-width: 768px) {
   .contact {
       padding: 1rem;

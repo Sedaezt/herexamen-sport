@@ -1,252 +1,35 @@
- {# {% extends "_layout.twig" %}
-
-{% block content %}
-    <!-- Zoekformulier -->
-    <div class="search-container">
-        <form action="" method="get" class="search-form">
-            <input type="text" name="q" placeholder="Zoeken in accessoires..." value="{{ craft.app.request.getQueryParam('q') }}">
-            <button type="submit">Zoek</button>
-        </form>
-    </div>
-
-    {% set query = craft.app.request.getQueryParam('q') %}
-    {% if query %}
-        {% set accesoires = craft.entries()
-            .section('accesoires')
-            .search(query)
-            .all() %}
-    {% else %}
-        {% set accesoires = craft.entries.section('accesoires').all() %}
-    {% endif %}
-
-    <div class="catalog-container">
-        {% if accesoires is not empty %}
-            {% for accessoire in accesoires %}
-                <div class="entry">
-                    <div class="title-container">
-                        <h1>{{ accessoire.title }}</h1>
-                    </div>
-
-                    {% set images = accessoire.imageSlider.all() %}
-
-                    <div class="content-container">
-                        <div class="slider-container">
-                            <div class="slider">
-                                <div class="slides">
-                                    {% for image in images %}
-                                        <div class="slide">
-                                            <!-- Gebruik het 'detail' transform voor de afbeelding -->
-                                            <img src="{{ image.url('detail') }}" alt="{{ image.title }}">
-                                        </div>
-                                    {% endfor %}
-                                </div>
-
-                                <div class="controls">
-                                    <button class="prev-slide">← Vorige</button>
-                                    <button class="next-slide">Volgende →</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="text-content">
-                            <p>{{ accessoire.richText }}</p>
-                            <div class="full-text">
-                                {{ accessoire.fullText }}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            {% endfor %}
-        {% else %}
-            <p>No data found.</p>
-        {% endif %}
-    </div>
-
-    <style>
-        .search-container {
-            position: relative;
-            width: 100%;
-            height: 0; /* Zorg ervoor dat de container geen extra hoogte toevoegt */
-        }
-
-        .search-form {
-            position: absolute;
-            top: 25px; /* 150px vanaf de bovenkant van het scherm */
-            right: 20px; /* 20px vanaf de rechterkant van het scherm */
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            background: #fff;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .search-form input[type="text"] {
-            padding: 10px;
-            width: 300px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .search-form button {
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .search-form button:hover {
-            background-color: #555;
-        }
-
-        .catalog-container {
-            display: flex;
-            flex-wrap: wrap; /* Zorgt ervoor dat de items naar de volgende regel worden verplaatst als er geen ruimte meer is */
-            gap: 20px; /* Ruimte tussen de items */
-            padding: 20px; /* Padding rond de container */
-        }
-
-        .entry {
-            flex: 1 1 calc(33.333% - 40px); /* Zorgt ervoor dat de items drie per rij zijn, minus de gap */
-            box-sizing: border-box;
-            background: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .title-container {
-            text-align: center;
-            margin: 10px;
-            margin-top: 150px; /* Verplaatst de titel 150px naar beneden */
-        }
-
-        .title-container h1 {
-            font-size: 15px;
-            margin: 0;
-        }
-
-        .slider-container {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .slider {
-            position: relative;
-            width: 100%;
-            height: 200px; /* Aangepaste hoogte voor de slider */
-            overflow: hidden;
-            margin-bottom: 10px;
-        }
-
-        .slides {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .slide {
-            min-width: 100%;
-            box-sizing: border-box;
-        }
-
-        .slide img {
-            width: 100%;
-            height: auto; /* Houdt de aspect ratio van de afbeelding */
-            max-height: 180px; /* Zorgt ervoor dat de afbeelding niet te groot wordt */
-            object-fit: cover;
-        }
-
-        .controls {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 10px;
-        }
-
-        .controls button {
-            padding: 8px 16px;
-            font-size: 14px;
-            cursor: pointer;
-            background-color: #333;
-            color: white;
-            border: none;
-            border-radius: 4px;
-        }
-
-        .controls button:hover {
-            background-color: #555;
-        }
-
-        .text-content {
-            padding: 10px;
-            padding-left: 100px; /* Verplaatst de tekst 100px naar rechts */
-            margin-top: 150px; /* Verplaatst de tekst 150px naar beneden */
-        }
-
-        .text-content p {
-            margin-bottom: 10px;
-        }
-
-        .full-text {
-            margin-top: 10px;
-        }
-
-        @media (max-width: 768px) {
-            .entry {
-                flex: 1 1 calc(50% - 40px); /* Twee per rij op kleinere schermen */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .entry {
-                flex: 1 1 100%; /* Eén per rij op mobiele schermen */
-            }
-        }
-    </style>
-
-    <script src="/js/slider.js"></script>
-
-{% endblock %}  #}
-
-{# SPORT PAGINA #}
 {% extends "_layout.twig" %}
 
 {% block content %}
-  {# Zoekquery ophalen #}
+  {# Zoekbalk code #}
   {% set searchQuery = craft.app.request.getParam('search') %}
 
-  {# Zoekformulier tonen #}
-  <form method="get" action="{{ url('accesoires') }}">
+  <form method="get" action="{{ url('accesoires') }}" class="search-form">
     <input type="text" name="search" placeholder="Search..." value="{{ searchQuery }}">
     <button type="submit">Search</button>
   </form>
 
-  {# Entries ophalen en filteren op basis van de zoekquery #}
   {% set entries = craft.entries()
     .section('accesoires')
-    .search(searchQuery)  
+    .search(searchQuery) 
     .all()
   %}
 
-  <section class="news-section all-news">
+  <section class="news-section all-news moved-down">
     {% for entry in entries %}
       <article>
         {% if entry.imageSlider is not empty %}
-          {% set imageSlider = entry.imageSlider.one() %}
-          {% if imageSlider %}
-            <img src="{{ imageSlider.url('detail') }}" alt="{{ entry.title }}">
-          {% else %}
-            <p>No image available.</p>
-          {% endif %}
+          <div class="slider-container">
+            <button class="prev-slide">Prev</button>
+            <div class="slides">
+              {% for image in entry.imageSlider %}
+                <div class="slide">
+                  <img src="{{ image.url('detail') }}" alt="{{ entry.title }}">
+                </div>
+              {% endfor %}
+            </div>
+            <button class="next-slide">Next</button>
+          </div>
         {% else %}
           <p>No image available.</p>
         {% endif %}
@@ -258,4 +41,6 @@
       </article>
     {% endfor %}
   </section>
+
+  <script src="/js/slider.js"></script>
 {% endblock %}

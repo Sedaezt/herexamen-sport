@@ -1,41 +1,41 @@
-// aanroepen van de elementen
-const slides = document.querySelector('.slides');
-const prevButton = document.querySelector('.prev-slide');
-const nextButton = document.querySelector('.next-slide');
+document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM fully loaded and parsed");
 
-// houdt bij welke slide momenteel zichtbaar is
-let currentIndex = 0;
+    document.querySelectorAll('.slider-container').forEach(function(container) {
+        const slides = container.querySelector('.slides');
+        const prevButton = container.querySelector('.prev-slide');
+        const nextButton = container.querySelector('.next-slide');
 
-// updaten van de positie v/d slides
-function updateSlidePosition() {
-    // slides naar links verplaatsen om juiste img weer te geven
-    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
+        if (!slides || !prevButton || !nextButton) {
+            console.error('Slider elements not found');
+            return;
+        }
 
-// volgende knop
-nextButton.addEventListener('click', () => {
-    if (currentIndex < slides.children.length - 1) {
-        currentIndex++;
-    } else {
-        // terug naar de eerste als we bij het einde zijn 
-        currentIndex = 0;
-    }
+        let currentIndex = 0;
 
-    updateSlidePosition();
+        function updateSlidePosition() {
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        nextButton.addEventListener('click', () => {
+            if (currentIndex < slides.children.length - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            updateSlidePosition();
+        });
+
+        prevButton.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = slides.children.length - 1;
+            }
+            updateSlidePosition();
+        });
+
+        // Initial update to set position
+        updateSlidePosition();
+    });
 });
-
-// Vorige knop
-prevButton.addEventListener('click', () => {
-    // terug kunnen gaan
-    if (currentIndex > 0) {
-        currentIndex--;
-    } else {
-        // Ga naar de laatste slide als je op de eerste bent
-        currentIndex = slides.children.length - 1; 
-    }
-    
-    updateSlidePosition();
-});
-
-
-
