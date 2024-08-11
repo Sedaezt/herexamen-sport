@@ -1,41 +1,42 @@
-document.addEventListener('DOMContentLoaded', function() {
-    console.log("DOM fully loaded and parsed");
+function initializeSlider(containerSelector, prevButtonSelector, nextButtonSelector) {
+    const slides = document.querySelectorAll(containerSelector + ' .slide');
+    const prevButton = document.querySelector(prevButtonSelector);
+    const nextButton = document.querySelector(nextButtonSelector);
 
-    document.querySelectorAll('.slider-container').forEach(function(container) {
-        const slides = container.querySelector('.slides');
-        const prevButton = container.querySelector('.prev-slide');
-        const nextButton = container.querySelector('.next-slide');
+    if (!slides.length || !prevButton || !nextButton) {
+        console.error('Slider elements not found');
+        return;
+    }
 
-        if (!slides || !prevButton || !nextButton) {
-            console.error('Slider elements not found');
-            return;
-        }
+    let currentIndex = 0;
 
-        let currentIndex = 0;
-
-        function updateSlidePosition() {
-            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
-
-        nextButton.addEventListener('click', () => {
-            if (currentIndex < slides.children.length - 1) {
-                currentIndex++;
-            } else {
-                currentIndex = 0;
+    function updateSlidePosition() {
+        slides.forEach((slide, index) => {
+            slide.classList.remove('active');
+            if (index === currentIndex) {
+                slide.classList.add('active');
             }
-            updateSlidePosition();
         });
+    }
 
-        prevButton.addEventListener('click', () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-            } else {
-                currentIndex = slides.children.length - 1;
-            }
-            updateSlidePosition();
-        });
-
-        // Initial update to set position
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % slides.length;
         updateSlidePosition();
     });
+
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateSlidePosition();
+    });
+
+    // Initialize the first slide as active
+    updateSlidePosition();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize slider for overview page
+    initializeSlider('.slider-container .slides', '.slider-container .prev-slide', '.slider-container .next-slide');
+    
+    // Initialize slider for detail page
+    initializeSlider('.detail-slider-container .detail-slides', '.detail-slider-container .detail-prev-slide', '.detail-slider-container .detail-next-slide');
 });

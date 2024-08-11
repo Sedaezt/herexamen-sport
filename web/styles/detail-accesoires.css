@@ -1,0 +1,67 @@
+/* Zorg ervoor dat de slider-container gecentreerd is */
+.detail-slider-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 150px auto; 
+}
+
+.slide img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* De slides zelf */
+.slide {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden; 
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+} 
+
+.slide.active {
+    opacity: 1; 
+    position: relative;
+    display: block;
+
+}
+
+/* Stijl voor de tekstuele content */
+.detail-content {
+    padding: 20px;
+    max-width: 800px;
+    margin: -100px auto;
+}
+
+/* Knoppen voor de slider */
+.detail-prev-slide, .detail-next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.detail-prev-slide {
+    left: 50px;
+}
+
+.detail-next-slide {
+    right: 50px;
+}

@@ -1,7 +1,8 @@
 {% extends "_layout.twig" %}
 
 {% block content %}
-  {# Zoekbalk code #}
+  <link rel="stylesheet" href="/styles/detail-accesoires.css"> 
+
   {% set searchQuery = craft.app.request.getParam('search') %}
 
   <form method="get" action="{{ url('accesoires') }}" class="search-form">
@@ -20,27 +21,25 @@
       <article>
         {% if entry.imageSlider is not empty %}
           <div class="slider-container">
-            <button class="prev-slide">Prev</button>
             <div class="slides">
-              {% for image in entry.imageSlider %}
-                <div class="slide">
-                  <img src="{{ image.url('detail') }}" alt="{{ entry.title }}">
-                </div>
-              {% endfor %}
+                {% for image in entry.imageSlider %}
+            <div class="slide">
+                    <img src="{{ image.url('detail') }}" alt="{{ entry.title }}">
             </div>
-            <button class="next-slide">Next</button>
+          {% endfor %}
+            </div>
           </div>
         {% else %}
           <p>No image available.</p>
         {% endif %}
         <div>
           <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
-          <p>{{ entry.introText }}</p>
           <p>{{ entry.fullText }}</p>
+          <p>{{ entry.introText }}</p>
         </div>
       </article>
     {% endfor %}
   </section>
+    <script src="/js/slider.js"></script>
 
-  <script src="/js/slider.js"></script>
 {% endblock %}

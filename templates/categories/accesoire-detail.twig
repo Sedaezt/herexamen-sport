@@ -1,28 +1,27 @@
 {% extends "_layout.twig" %}
 
 {% block extra_styles %}
-  <link rel="stylesheet" href="/css/style.css"> {# Specifieke CSS voor detailpagina #}
+  <link rel="stylesheet" href="/styles/detail-accesoires.css"> {# Specifieke CSS voor detailpagina #}
 {% endblock %}
 
 {% block content %}
   <article>
     {% if entry.imageSlider is not empty %}
-      <div class="slider-container">
-        <button class="prev-slide">Prev</button>
-        <div class="slides">
+      <div class="detail-slider-container">
+        <button class="detail-prev-slide">Prev</button>
+        <div class="detail-slides">
           {% for image in entry.imageSlider %}
             <div class="slide">
-              <img src="{{ image.url('detail') }}" alt="{{ entry.title }}">
+                    <img src="{{ image.url('detail') }}" alt="{{ entry.title }}">
             </div>
           {% endfor %}
         </div>
-        <button class="next-slide">Next</button>
+        <button class="detail-next-slide">Next</button>
       </div>
-    {% else %}
-      <p>No image available.</p>
     {% endif %}
-    <div>
+    <div class="detail-content">
       <h1>{{ entry.title }}</h1>
+      <p>{{ entry.richText }}</p>
       <p>{{ entry.introText }}</p>
       <p>{{ entry.fullText }}</p>
     </div>
@@ -30,5 +29,3 @@
 
   <script src="/js/slider.js"></script>
 {% endblock %}
-
-
