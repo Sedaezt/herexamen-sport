@@ -19,19 +19,19 @@
     padding: 10px 0;
   }
   
-  @media (min-width: 960px) {
-    .footer-content {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-  }
+@media (min-width: 960px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
   
   .footer-section {
-      flex: 1;
-      min-width: 45%; 
+    flex: 1;
+    min-width: 45%; 
   }
   
   .footer-section.about {
-      margin-right: 100px; 
+    margin-right: 100px; 
   }
-  }
+}

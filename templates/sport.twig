@@ -35,11 +35,10 @@
     let selectedCategories = [];
 
     document.querySelectorAll(".plugin-categories input").forEach((element) => {
-      element.addEventListener("change", onSelectCategory);
+      element.addEventListener("change", onSelectCategory); 
     });
 
     function onSelectCategory(e) {
-      console.log("change");
       if (selectedCategories.includes(this.name)) {
         let index = selectedCategories.indexOf(this.name);
         selectedCategories.splice(index, 1);
@@ -47,12 +46,10 @@
       else {
         selectedCategories.push(this.name);
       }
-      console.log(selectedCategories);
       updateGrid();
     }
 
     function updateGrid() {
-      console.log("updateGrid");
       document.querySelectorAll(".news-section article").forEach((el) => {
         el.style.display = "none";
         for (let i = 0; i < selectedCategories.length; i++) {

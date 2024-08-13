@@ -1,10 +1,7 @@
 /* navigatie */
-.header-title {
-    color: #ffffff; /* Zet de tekstkleur op wit of een andere gewenste kleur */
-  }
-  
-  .header-title a {
-    color: #ffffff; /* Zorg ervoor dat links binnen de richText ook zichtbaar zijn */
+.header-title,
+.header-title a {
+    color: var(--background-color); 
   }
   
   nav {
@@ -29,7 +26,6 @@
     padding: 1em 1.25em;
   }
 
-  
 a {
     color: var(--main-color);
     text-decoration: none;
@@ -48,7 +44,6 @@ a {
     display: block;
     margin: 0 auto;
   }
-
 
 /* HAMBURGER MENU */
 @media only screen and (max-width: 959px) {
@@ -129,10 +124,7 @@ a {
     }
   }
 
-
-
   @media only screen and (min-width: 960px) {
-
 
     .nav-menu {
         display: flex;
@@ -155,7 +147,4 @@ a {
         color: var(--background-color);
         font-size: var(--font-size-h3-mobile);
       }
-
-
-
   }

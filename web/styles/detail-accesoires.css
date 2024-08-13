@@ -1,25 +1,4 @@
-/* SEARCH */
-.search-form {
-  position: absolute; 
-  right: 25px; 
-  top: 120px; 
-}
-
-.search-form input[type="text"] {
-  padding: 5px;
-  margin-right: 10px;
-}
-
-.search-form button {
-  padding: 5px;
-}
-/* styles.css of een andere naam die je gebruikt */
-.moved-down {
-  margin-top: 100px; /* Verplaatst de sectie 100px naar beneden */
-}
-
-
-/* Zorg ervoor dat de slider-container gecentreerd is */
+/* SLIDER  */
 .detail-slider-container {
     position: relative;
     width: 100%;
@@ -34,7 +13,6 @@
     margin: 0 auto;
 }
 
-/* De slides zelf */
 .slide {
     position: relative;
     width: 100%;
@@ -59,20 +37,20 @@
 
 }
 
-/* Stijl voor de tekstuele content */
 .detail-content {
     padding: 20px;
     max-width: 800px;
     margin: -100px auto;
 }
 
-/* Knoppen voor de slider */
 .detail-prev-slide, .detail-next-slide {
     position: absolute;
     top: 50%;
+    font-size: 16px;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--main-color-hover);
     color: white;
+    border-radius: 8px;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -89,10 +67,10 @@
 
 @media (min-width: 960px) {
     .detail-prev-slide {
-        left: calc(10px + 500px); /* Verplaatst 100px naar het midden */
+        left: 500px; 
     }
 
     .detail-next-slide {
-        right: calc(10px + 500px); /* Verplaatst 100px naar het midden */
+        right: 500px; 
     }
 }

@@ -1,25 +1,26 @@
-
 /* SEARCH */
 .search-form {
-    position: absolute; 
-    right: 25px; 
-    top: 120px; 
+  position: absolute; 
+  right: 25px; 
+  margin-top: 30px;
+}
+
+.search-form input[type="text"] {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.search-form button {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--main-color);
+  color: var(--background-color);
   }
-  
-  .search-form input[type="text"] {
-    padding: 5px;
-    margin-right: 10px;
-  }
-  
-  .search-form button {
-    padding: 5px;
-  }
-  /* styles.css of een andere naam die je gebruikt */
+
   .moved-down {
-    margin-top: 100px; /* Verplaatst de sectie 100px naar beneden */
+    margin-top: 100px; 
   }
   
-  /* styles.css of je eigen CSS-bestand */
   .slider-container {
     position: relative;
     width: 100%;
@@ -45,7 +46,7 @@
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: var(--background-color);
     border: none;
     padding: 10px;
     cursor: pointer;

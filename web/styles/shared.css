@@ -37,38 +37,15 @@ header {
     padding: var(--padding-medium);
 }
 
-
 h1 {
     font-size: var(--font-size-h1);
     margin: var(--margin-medium);
     text-align: center;
 }
 
-/* h4 {
-    font-size: var(--font-size-h4);
-}
-
-h5 {
-    font-size: var(--font-size-h5);
-} */
-
-/* a, label {
-    font-size: var(--font-size-small);
-    color: var(--main-color);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-} */
- 
 .button {
     padding: 0.5em 1em;
     border-radius: 5px;
     border: 1px solid var(--color-black);
 
 }
-
-/* .button:hover {
-    background-color: var(--main-color);
-}   */

@@ -29,14 +29,10 @@ function initializeSlider(containerSelector, prevButtonSelector, nextButtonSelec
         updateSlidePosition();
     });
 
-    // Initialize the first slide as active
     updateSlidePosition();
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize slider for overview page
     initializeSlider('.slider-container .slides', '.slider-container .prev-slide', '.slider-container .next-slide');
-    
-    // Initialize slider for detail page
     initializeSlider('.detail-slider-container .detail-slides', '.detail-slider-container .detail-prev-slide', '.detail-slider-container .detail-next-slide');
 });

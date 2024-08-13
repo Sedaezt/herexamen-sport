@@ -1,14 +1,12 @@
 {# Homepage (vier producten) #}
 {% block content %}
-
   </div>
-  <section class="plugin-categories">
-   {% set entries = craft.entries().section('sportFilter').limit(4) %}
-
-    {% for entry in entries %}
+    <section class="plugin-categories">
+      {% set entries = craft.entries().section('sportFilter').limit(4) %}
+      {% for entry in entries %}
     <article
       {% for category in entry.storeCategories %}
-       data-{{category}}
+        data-{{category}}
       {% endfor %}
     >
         <img src="{{entry.bannerImage.one().url('detail')}}" alt="">
@@ -16,7 +14,6 @@
           <h2><a href="{{entry.url}}">{{entry.title}}</a></h2>
           <p>{{entry.fullText}}<p>
           <p>{{entry.introText}}<p>
-
         </div>
     </article>
     {% endfor %}
