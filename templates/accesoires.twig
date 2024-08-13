@@ -1,9 +1,9 @@
 {% extends "_layout.twig" %}
 
 {% block content %}
-  <link rel="stylesheet" href="/styles/detail-accesoires.css"> 
 
   {% set searchQuery = craft.app.request.getParam('search') %}
+  <link rel="stylesheet" href="/styles/detail-accesoires.css"> 
 
   <form method="get" action="{{ url('accesoires') }}" class="search-form">
     <input type="text" name="search" placeholder="Search..." value="{{ searchQuery }}">
@@ -21,7 +21,7 @@
       <article>
         {% if entry.imageSlider is not empty %}
           <div class="slider-container">
-            <div class="slides">
+            <div class="detail-slides">
                 {% for image in entry.imageSlider %}
             <div class="slide">
                     <img src="{{ image.url('detail') }}" alt="{{ entry.title }}">
@@ -29,8 +29,7 @@
           {% endfor %}
             </div>
           </div>
-        {% else %}
-          <p>No image available.</p>
+
         {% endif %}
         <div>
           <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>

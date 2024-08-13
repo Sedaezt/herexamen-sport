@@ -3,7 +3,8 @@
   "prefer-stable": true,
   "require": {
     "abmat/craft-tinymce": "2.0.4",
-    "craftcms/cms": "5.3.1",
+    "craftcms/cms": "5.3.3",
+    "craftcms/element-api": "4.1.0",
     "nystudio107/craft-typogrify": "5.0.1",
     "verbb/expanded-singles": "3.0.0",
     "vlucas/phpdotenv": "^5.4.0"

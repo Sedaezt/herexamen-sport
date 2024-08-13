@@ -11,7 +11,6 @@ settings:
   branchLimit: null
   defaultUploadLocationSource: 'volume:24b335d5-9e12-4faf-a1de-02925c8d7606' # homepage asssets
   defaultUploadLocationSubpath: null
-  localizeRelations: false
   maintainHierarchy: false
   maxRelations: null
   minRelations: null
@@ -31,5 +30,5 @@ settings:
   validateRelatedElements: false
   viewMode: list
 translationKeyFormat: null
-translationMethod: site
+translationMethod: none
 type: craft\fields\Assets

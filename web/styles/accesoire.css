@@ -1,0 +1,61 @@
+
+/* SEARCH */
+.search-form {
+    position: absolute; 
+    right: 25px; 
+    top: 120px; 
+  }
+  
+  .search-form input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .search-form button {
+    padding: 5px;
+  }
+  /* styles.css of een andere naam die je gebruikt */
+  .moved-down {
+    margin-top: 100px; /* Verplaatst de sectie 100px naar beneden */
+  }
+  
+  /* styles.css of je eigen CSS-bestand */
+  .slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+  }
+  
+  .slide img {
+    width: 20%;
+    display: block;
+  }
+  
+  .prev-slide, .next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .prev-slide {
+    left: 10px;
+  }
+  
+  .next-slide {
+    right: 10px;
+  }
+  
